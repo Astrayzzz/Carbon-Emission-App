@@ -114,24 +114,24 @@ def get_vehicle_capacities(dataset_file="Dataset.csv"):
 # -----------------------------------------------------------------
 
 st.set_page_config(layout="wide")
-st.title("Smart Carbon Logistics Dashboard (Robust Version)")
-# --- (โค้ด CSS สำหรับ "บังคับ" สีปุ่ม) ---
+st.title("Smart Carbon Logistics Dashboard")
+# --- (โค้ด CSS สำหรับ "บังคับ" สีปุ่ม #9efd38) ---
 st.markdown("""
 <style>
     /* Target the primary button */
     .stButton > button[kind="primary"] {
-        background-color: #0068C9; /* สีฟ้า */
-        color: white;
-        border-color: #0068C9;
+        background-color: #9efd38; /* สีเขียวมะนาว */
+        color: black;            /* (สำคัญ) บังคับตัวอักษรเป็นสีดำ */
+        border-color: #9efd38;
     }
     .stButton > button[kind="primary"]:hover {
-        background-color: #004a99; /* สีฟ้าเข้ม (ตอนเอาเมาส์ชี้) */
-        color: white;
-        border-color: #004a99;
+        background-color: #80c92d; /* สีเขียวเข้ม (ตอนเอาเมาส์ชี้) */
+        color: black;
+        border-color: #80c92d;
     }
     /* (ทางเลือก) ลบเงาสีส้ม/แดง ตอนกด */
     .stButton > button[kind="primary"]:focus {
-        box-shadow: 0 0 0 0.2rem rgba(0, 104, 201, 0.5) !important; 
+        box-shadow: 0 0 0 0.2rem rgba(158, 253, 56, 0.5) !important; 
     }
 </style>
 """, unsafe_allow_html=True)
